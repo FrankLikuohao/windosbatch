@@ -42,4 +42,4 @@ rem local signalling
 rem mkdir %1.%datetime%.xcopy.finish
 echo  "copy %1 p:\new\%1   /D/K/E/Y/C/I/H finish at %datetime% " >> %1.%datetime%.xcopy.finish/%1.%datetime%.xcopy.finish.txt
 echo  "copy %1 p:\new\%1   /D/K/E/Y/C/I/H finish at %datetime% " >> p:\new\log\download.log
-pause
+
