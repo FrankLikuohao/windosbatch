@@ -23,7 +23,7 @@ rem copy and show processing status
 rem xcopy %1 "p:\new\%Unquoted%" /D/K/E/Y/C/I/H | wtee.exe "p:\new\%Unquoted%.%datetime%.xcopy.finish.txt"
 rem robocopy.exe http://www.microsoft.com/en-us/download/details.aspx?id=17657
 rem ROBOCOPY source destination /MIR
-ROBOCOPY i:\finishdownload  p:\new\ /e /xo /eta /TEE /np /LOG+:"p:\new\log\download.log" /xf *.torrent *.bat *.txt *.exe
+ROBOCOPY i:\finishdownload  p:\new\ /e /xo /eta /TEE /np /LOG+:"p:\new\log\download.log" /xf *.torrent *.bat *.txt *.exe /xd .git
 del %1.%datetime%.xcopy.begin.txt
 
 set datetime=%date:~0,4%%date:~5,2%%date:~8,2%_%time:~0,2%%time:~3,2%%time:~6,2%
