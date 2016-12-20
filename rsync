@@ -1,0 +1,2 @@
+#                                                source                  destination  
+rsync -avx --progress --partial --append -e ssh 192.168.1.108:/mnt /media/sf_coldDate_F/hiserver
